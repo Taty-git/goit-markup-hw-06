@@ -228,8 +228,7 @@ button {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    max-width: 320px;
-        
+    max-width: 320px;        
 }
 .head-title {
     color: #FFFFFF;
@@ -285,8 +284,101 @@ button {
     margin-right: auto;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .main-button:hover,
 .main-button:focus {
     background-color: #404BBF;
 }
+/* second section */
+.second-section {
+    padding: 96px 16px;
+}
+.feature {
+    list-style-type: none;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 72px;
+}
+.feat-items {
+    flex-wrap: wrap;
+}
+.box-icons {
+    display: none;
+}
+.feat-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    text-align: center;
+    margin-bottom: 8px;   
+}
+.feat-text {
+    color: #434455;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+@media screen and (min-width: 768px) {
+    .second-section {
+        padding: 96px 16;
+    }
+    .feature {
+        gap: 8px;
+        flex-direction: row;
+        flex-wrap: wrap;      
+    }
+    .feat-items {             
+        flex-basis: calc((100% - 1 * 24px) / 2);
+    }
+}
+@media screen and (min-width: 1158px) {
+    .second-section {
+        padding: 120px 0;
+    }
+    .feature {
+        gap: 24px;
+    }
+    .box-icons {
+        border-radius: 4px;
+        border: 1px solid #8e8f99;
+        background: #e7e9fc;
+        width: 264px;
+        height: 112px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f4f4fd;
+        margin-bottom: 8px;    
+    }
+    .icon {        
+        width: 64px;
+        height: 64px;
+    }
+    .feat-items {
+        flex-basis: calc((100% - 3 * 24px) / 4);
+    }
+    .feat-title {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        margin-top: 8px;
+    }
+    .feat-text {
+        font-weight: 200;        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
