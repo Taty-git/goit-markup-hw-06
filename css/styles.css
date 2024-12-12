@@ -102,34 +102,7 @@ button {
     text-transform: uppercase;
 }
 
-.logo {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #4d5ae5;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    text-decoration: none;
-    margin-right: 76px;
-}
 
-.logo:focus,
-.logo:active {
-    color: #404bbf;
-}
-
-.span-logo {
-    color: #2e2f42;
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-}
 .btn-burger {
     padding: 0;
     background-color: transparent;
@@ -151,7 +124,7 @@ button {
     }
     .logo {
         padding: 24px 0;
-        margin-right: 120px;
+        
     }
     .site-nav {
         font-weight: 500;
@@ -226,11 +199,9 @@ button {
     }
     
     .address-nav {
-        font-weight: 400;  
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        list-style-type: none; 
         display: flex;
         flex-direction: row;
         gap: 40px;        
@@ -239,4 +210,83 @@ button {
         line-height: 1.5;
         letter-spacing: 0.02em;       
     }
+}
+/* hero */
+.main-section {
+    background-color: #2E2F42;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    padding-right: 52px;
+    padding-left: 52px;
+    align-content: center;
+    margin: 0;
+            
+    background-image: linear-gradient(to bottom,
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+        url(../images/people-office.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 320px;
+        
+}
+.head-title {
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 2%;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    max-width: 216px;
+    margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+    .main-section {
+        max-width: 768px;
+        padding-top: 112px;
+        padding-bottom: 112px;
+        height: auto;
+    }
+    .head-title {
+        font-size: 56px;
+        line-height: 1.07;
+        max-width: 496px;        
+    }
+}
+@media screen and (min-width: 1158px) {
+    .main-section {
+        padding-top: 188px;
+        padding-bottom: 188px;
+        max-width: 1440px;
+    }    
+}
+.main-button {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 10px;
+    background-color: #4D5AE5;
+    color: #FFFFFF;
+    border-color: #4D5AE5;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    border-radius: 4px;
+    padding: 16px 32px;
+    min-width: 169px;
+    height: 56px;        
+    border: none;
+    margin-top: 72px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.main-button:hover,
+.main-button:focus {
+    background-color: #404BBF;
 }
