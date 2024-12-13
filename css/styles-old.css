@@ -6,13 +6,7 @@
 
 
 
-.team-text, .portfolio-text {
-    color: #434455;
-    font-size: 16px;
-    letter-spacing: 0.02em;
-    line-height: 1.5;
-    text-align: center;
-}
+
 .portfolio-section {
     padding: 120px 0 120px 0;
     justify-content: center;
