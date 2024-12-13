@@ -504,10 +504,59 @@ button {
     }
 }
 /* portfolio section */
-
-
-
-
+.portfolio-section {
+    padding: 96px 16px;
+    justify-content: center;
+}
+.portfolio-title {
+    color: #2E2F42;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+    align-items: center;
+}
+.portfolio-list-blocks {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 32px;
+    row-gap: 48px;    
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 4px 4px;
+    padding: 0px 0px 32px 0px;
+}
+.portfolio-image {
+    object-fit: contain;
+    overflow: hidden;
+}
+.portfolio-box {
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-text {
+    text-align: left;
+}
+.portfolio-list-blocks-title {
+    color: #2E2F42;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+    text-align: left;
+    margin-right: 76px;
+    margin-bottom: 8px;
+}
+.port-disscr {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    width: 288px;
+}
 
 
 
