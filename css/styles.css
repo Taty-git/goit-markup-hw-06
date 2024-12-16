@@ -196,8 +196,7 @@ button {
 @media screen and (min-width: 1158px) {
     .logo {
         margin-right: 76px;
-    }
-    
+    }    
     .address-nav {
         font-size: 16px;
         line-height: 1.5;
@@ -219,16 +218,14 @@ button {
     padding-right: 52px;
     padding-left: 52px;
     align-content: center;
-    margin: 0;
-            
+    margin: 0;            
     background-image: linear-gradient(to bottom,
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
         url(../images/people-office.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-          
+    background-size: cover;          
 }
 .head-title {
     color: #FFFFFF;
@@ -772,16 +769,38 @@ button {
 @media screen and (min-width: 768px) {
     .foot {
         padding-left: 108px;
+        
     }
-    .foot .container {
-        align-items: flex-start;
+    .foot> .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: baseline;
+        gap: 24px;
+    }
+    .foot-logo-box {
+        width: 264px;
+        height: 112px;
     }
     .logo-foot {
         display: flex;
         justify-content: flex-start;  
+    }    
+    .footer-media {
+        
+        width: 208px;
+        height: 80px;
+               
+    }
+    .social-media {
+        justify-content: flex-start;
+        
     }
     .foot-logo-box .footer-media {
-        display: flex;
+        display: inline;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        
     }
 }
 
