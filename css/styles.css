@@ -458,7 +458,8 @@ button {
     height: 40px;
 }
 .icons,
-.icons-foot {
+.icons-foot,
+.icons-menu {
     background-color: #4D5AE5;
     fill: #f4f4fd;
 }
@@ -1102,6 +1103,7 @@ border-radius: 4px;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding-top: 72px;
     padding-bottom: 24px;
+    
 }
 .mobile-menu.is-open {
     opacity: 1;
@@ -1110,6 +1112,9 @@ border-radius: 4px;
 }
 .mobile-menu-container {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 .btn-menu-close {
     position: absolute;
@@ -1122,6 +1127,9 @@ border-radius: 4px;
     height: 24px;
     fill: #2E2F42;
 }
+.mob-navigation {
+    display: flex;
+}
 .mob-nav {
     margin-top: 72px;
     display: flex;
@@ -1133,7 +1141,8 @@ border-radius: 4px;
     font-size: 36px;
     line-height: 1.11111;
     letter-spacing: 0.02em;
-    list-style: none;    
+    list-style: none;
+       
 }
 .mob-link,
 .mob-link-one {
@@ -1145,7 +1154,61 @@ border-radius: 4px;
 .mob-link {
     color: #2E2F42;
 }
+.mobile-menu-address {
+    font-style: normal;
+    display: flex;
+}
+.mobile-address-nav {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    list-style-type: none;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 178px;
+   
+}
 
+.mob-address-link {
+    text-decoration: none;
+    color: #434455;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-address-link:hover,
+.mob-address-link:focus {
+    color: #4D5AE5;
+}
+.mobile-menu .container {
+    align-items: start;
+}
+.social-links-menu {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 40px;
+    list-style-type: none;
+    margin-top: 48px;
+    padding-bottom: 40px;
+}
+.icon-link-menu {
+    width: 40px;
+    height: 40px;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+         
+}
 
 @media screen and (min-width: 768px) {
    .mobile-menu {
