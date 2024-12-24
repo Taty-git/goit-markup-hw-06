@@ -264,6 +264,21 @@ button {
                 url(../images/people-office.jpg);
     }    
 }
+@media (min-resolution: 192dpi) {
+    .main-section {
+        background-image: url(../images/dark-bg-mob@2x.jpg);
+    }
+}
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    .main-section {
+        background-image: url(../images/dark-bg-tablet@2x.jpg);
+    }
+}
+@media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+    .main-section {
+        background-image: url(../images/people-office@2x.jpg);
+    }
+}
 .main-button {
     display: flex;
     align-items: flex-start;
