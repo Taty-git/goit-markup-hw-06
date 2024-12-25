@@ -103,6 +103,7 @@ button {
 }
 .header-burger {
     position: absolute;
+    right: 16px;
 }
 .btn-burger {
     padding: 0;
